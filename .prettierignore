@@ -1,0 +1,11 @@
+.git
+.git-crypt
+.vscode
+dist/*
+doc/*
+node_modules/*
+
+!.*
+*.json
+.babelrc
+.eslintrc

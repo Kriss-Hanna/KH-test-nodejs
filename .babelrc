@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "@const": "./src/const/index",
+          "@controller": "./src/controller/index",
+          "@middleware": "./src/middleware/index",
+          "@model": "./src/model/index",
+          "@repository": "./src/repository/index",
+          "@route": "./src/route/index"
+        }
+      }
+    ]
+  ]
+}

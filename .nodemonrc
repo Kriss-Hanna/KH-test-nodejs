@@ -1,0 +1,18 @@
+{
+  "restartable": "rs",
+  "colours": true,
+  "ignore": [
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "execMap": {
+    "ts": "babel-node --inspect=9229 -x .ts --config-file=\"{{pwd}}/.babelrc\""
+  },
+  "watch": [
+    "src/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts"
+}
